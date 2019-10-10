@@ -5,6 +5,7 @@
  */
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -30,9 +31,10 @@ int main()
 		cout << "That's roughly " << age_months << " months old! Cool!\n";
 	}
 
-	cout << "What is your favorite subject? ";
+	cout << "What is your favorite subject?\n";
 	string fav_subject;
-	cin >> fav_subject;
+	cin.ignore();
+	getline(cin,fav_subject);
 
 	if(fav_subject == "computer science")
 	{
@@ -41,7 +43,7 @@ int main()
 
 	else
 	{
-		cout << "That's cool! Mine is computer science.\nGoodbye!\n";
+		cout << fav_subject << " is cool! Mine is computer science.\nGoodbye!\n";
 	}
 
 	return 0;
