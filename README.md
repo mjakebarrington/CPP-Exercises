@@ -7,4 +7,4 @@ I have compiled all exercises using GCC (https://gcc.gnu.org/). I have not teste
 
 Some exercises may not be from the book, but are relevant exercises for the chapter. I have added them for extra practice.
 
-Some exercises may not be the most efficient. This is intentional for many exercises. The goal is https://www.amazon.com/Programming-Principles-Practice-Using-2nd/dp/0321992784usually to demonstrate a concept, not to write an award-winning algorithm.
+Some exercises may not be the most efficient. This is intentional for many exercises. The goal is usually to demonstrate a concept, not to write an award-winning algorithm.
