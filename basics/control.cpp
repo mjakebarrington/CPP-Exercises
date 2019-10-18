@@ -133,11 +133,12 @@ int main()
             std::cout << "Number is 4\n";
             // Notice how omitting break causes the program to 'cascade' through the rest of statements until a break is encountered.
         case 5:
-            // Also printed since I omitted a break in case 4.
+            // Also printed since I omitted a break in case 4:
             std::cout << "Number is 5\n";
             break;
         // case when there is no case
         default:
+            // Not executed since case 5 included break statement
             std::cout << "Num did not have case label\n";
             // break is not required for default case if default is last case, but is not illegal.
             break;
