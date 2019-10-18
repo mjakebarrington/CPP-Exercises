@@ -106,9 +106,41 @@ int main()
         std::cout << xyz << std::endl;
     }
     // goto allows you to jump to a label in your program:
+    // Use with caution!
     goto my_label;
     std::cout << "THIS WILL BE SKIPPED" << std::endl;
     my_label:
     std::cout << "I skipped the previous std output!" << std::endl;
+    
+    /*
+     * SWITCH SELECTION
+     * Switch cases can be useful if there are many conditions we want to check,
+     * but keep in mind switch is limited to constant expressions.
+    */
+    
+    const int constant_expression = 4;
+    switch (constant_expression) {
+        case 1:
+            std::cout << "Number is 1\n";
+            break;
+        case 2:
+            std::cout << "Number is 2\n";
+            break;
+        case 3:
+            std::cout << "Number is 3\n";
+            break;
+        case 4:
+            std::cout << "Number is 4\n";
+            // Notice how omitting break causes the program to 'cascade' through the rest of statements until a break is encountered.
+        case 5:
+            // Also printed since I omitted a break in case 4.
+            std::cout << "Number is 5\n";
+            break;
+        // case when there is no case
+        default:
+            std::cout << "Num did not have case label\n";
+            // break is not required for default case if default is last case, but is not illegal.
+            break;
+    }
    return 0;
 }
