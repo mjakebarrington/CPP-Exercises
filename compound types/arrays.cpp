@@ -18,6 +18,21 @@ int foo [5];
 // Arrays always start at index 0:
 // so foo has foo[0] up to foo[4] for a total of five elements
 
+/*
+ * ARRAYS AS PARAMETERS:
+ * It is not possible to directly pass an array as a parameter, but it can be passed as an address:
+ */
+
+template <class A>
+void print_arr(A arg[], int length)
+{
+    for(int i=0;i<length;++i)
+    {
+        std::cout << arg[i] << " ";
+    }
+    std::cout << std::endl;
+}
+
 int main()
 {
   // The elements of an array can be explicitly initialized when the array is declared by using curly braces:
@@ -60,4 +75,10 @@ int main()
        * 20 21 22 23 24
        * 30 31 32 33 34
        */
+      
+    /*
+     * ARRAYS AS PARAMETERS:
+     */
+    std::cout << bam.size();
+    print_arr(bam,4);
 }
